@@ -74,7 +74,7 @@
                         <div class="mb-3">
                             <span class="text-primary fw-bold fs-5">$<?php echo number_format($course['price'], 2); ?></span>
                         </div>
-                        <a href="course-details.php?id=<?php echo $course['id']; ?>" class="btn btn-primary w-100 rounded-pill">Enroll Now</a>
+                        <a href="course-detail.php?id=<?php echo $course['id']; ?>" class="btn btn-primary w-100 rounded-pill">Enroll Now</a>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     <div class="card-body p-4">
                         <span class="badge bg-primary bg-opacity-10 text-primary mb-2"><?php echo htmlspecialchars($post['category']); ?></span>
                         <h5 class="fw-bold mb-3"><?php echo htmlspecialchars($post['title']); ?></h5>
-                        <a href="blog-view.php?id=<?php echo $post['id']; ?>" class="text-primary fw-bold text-decoration-none small">Read More <i class="bi bi-arrow-right"></i></a>
+                        <a href="post-detail.php?id=<?php echo $post['id']; ?>" class="text-primary fw-bold text-decoration-none small">Read More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
