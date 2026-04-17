@@ -30,7 +30,9 @@ if (!$post) {
 
             <h1 class="fw-bold mb-4"><?php echo $post['title'] ?? '10 Tips to Improve Your Speaking Skills'; ?></h1>
             <div class="d-flex align-items-center mb-5">
-                <img src="https://picsum.photos/seed/avatar/50/50" class="rounded-circle me-3" alt="Author" referrerPolicy="no-referrer">
+                <div class="me-3 rounded-circle d-flex justify-content-center align-items-center bg-light text-dark" style="width: 50px; height: 50px; font-size: 24px;">
+                    <i class="bi bi-person-circle"></i>
+                </div>
                 <div>
                     <div class="fw-bold"><?php echo $post['author_name'] ?? 'Sarah Johnson'; ?></div>
                     <div class="text-muted small"><?php echo isset($post['created_at']) ? date('M d, Y', strtotime($post['created_at'])) : 'April 10, 2026'; ?> • 5 min read</div>

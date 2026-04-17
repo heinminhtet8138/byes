@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mt-5 mt-lg-0">
-                <img src="https://picsum.photos/seed/learning/800/600" alt="Students Learning" class="img-fluid rounded-4 shadow-lg">
+                <img src="assets/images/hero_img.png" alt="Students Learning" class="img-fluid rounded-4 shadow-lg">
             </div>
         </div>
     </div>

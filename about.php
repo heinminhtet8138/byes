@@ -11,7 +11,7 @@
                 <p class="lead text-muted">Founded in 2015, Boot Your English Skills has helped over 10,000 students break language barriers and achieve their professional dreams.</p>
             </div>
             <div class="col-lg-6">
-                <img src="https://picsum.photos/seed/school-story/800/500" alt="Our School" class="img-fluid rounded-4 shadow-sm" referrerPolicy="no-referrer">
+                <img src="assets/images/about.jpg" alt="Our School" class="img-fluid rounded-4 shadow-sm" referrerPolicy="no-referrer">
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
             <!-- Instructor 1 -->
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm rounded-4 text-center p-4">
-                    <img src="https://picsum.photos/seed/teacher1/200/200" class="rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Instructor" referrerPolicy="no-referrer">
+                    <img src="assets/images/t2.jpg" class="rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Instructor" referrerPolicy="no-referrer">
                     <h5 class="fw-bold mb-1">Dr. James Wilson</h5>
                     <p class="text-primary small mb-3">Head of Academic Affairs</p>
                     <p class="text-muted small">Specialist in Linguistics with over 15 years of experience in ESL teaching.</p>
@@ -67,7 +67,7 @@
             <!-- Instructor 2 -->
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm rounded-4 text-center p-4">
-                    <img src="https://picsum.photos/seed/teacher2/200/200" class="rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Instructor" referrerPolicy="no-referrer">
+                    <img src="assets/images/t1.jpg" class="rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Instructor" referrerPolicy="no-referrer">
                     <h5 class="fw-bold mb-1">Emma Thompson</h5>
                     <p class="text-primary small mb-3">IELTS Lead Trainer</p>
                     <p class="text-muted small">Certified IELTS examiner with a passion for helping students achieve Band 8+.</p>
@@ -80,7 +80,7 @@
             <!-- Instructor 3 -->
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm rounded-4 text-center p-4">
-                    <img src="https://picsum.photos/seed/teacher3/200/200" class="rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Instructor" referrerPolicy="no-referrer">
+                    <img src="assets/images/t3.avif" class="rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;" alt="Instructor" referrerPolicy="no-referrer">
                     <h5 class="fw-bold mb-1">Robert Garcia</h5>
                     <p class="text-primary small mb-3">Business English Specialist</p>
                     <p class="text-muted small">Former corporate executive turned educator, focusing on professional communication.</p>
