@@ -94,3 +94,49 @@ $filter = isset($_GET['status']) ? $_GET['status'] : 'All';
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function() {
+    $('.status-btn').on('click', function() {
+        const btn = $(this);
+        const enrollmentId = btn.data('id');
+        const newStatus = btn.data('status');
+        
+        // ခလုတ်ကို ခေတ္တပိတ်ထားမယ် (Double click မဖြစ်အောင်)
+        $('.status-btn[data-id="' + enrollmentId + '"]').prop('disabled', true);
+
+        $.ajax({
+            url: 'enrollments-logic.php', // ဒီနေရာမှာ CEO ရဲ့ logic code ဖိုင်နာမည်ကို ထည့်ပါ
+            type: 'POST',
+            data: {
+                id: enrollmentId,
+                status: newStatus
+            },
+            success: function(response) {
+                if (response.trim() === "success") {
+                    // Badge အရောင်ပြောင်းမယ်
+                    const badge = $('#badge-' + enrollmentId);
+                    badge.text(newStatus);
+                    badge.removeClass('bg-warning bg-success bg-danger text-dark');
+                    
+                    if (newStatus === 'Approved') {
+                        badge.addClass('bg-success');
+                    } else {
+                        badge.addClass('bg-danger');
+                    }
+
+                    // Action ခလုတ်နေရာမှာ "Done" ဆိုတဲ့ စာသားပြောင်းမယ်
+                    $('#action-' + enrollmentId).html('<span class="text-muted small"><i class="bi bi-check2-all"></i> Done</span>');
+                } else {
+                    alert('Error: ' + response);
+                    $('.status-btn[data-id="' + enrollmentId + '"]').prop('disabled', false);
+                }
+            },
+            error: function() {
+                alert('Connection error. Please try again.');
+                $('.status-btn[data-id="' + enrollmentId + '"]').prop('disabled', false);
+            }
+        });
+    });
+});
+</script>
